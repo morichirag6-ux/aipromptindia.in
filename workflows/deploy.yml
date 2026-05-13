@@ -25,10 +25,11 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # Upload only site files, not .github or hidden folders
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: ./   # root folder containing index.html
 
       - name: Deploy
         uses: actions/deploy-pages@v4
