@@ -342,7 +342,7 @@ document.addEventListener('click',function(e){
   }
 });
 new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.1})
-  .observe && document.querySelectorAll('.fu').forEach(function(el){
+  .observe && document.querySelectorAll('.fade-up, .fu, .slide-left, .slide-right, .scale-in').forEach(function(el){
     new IntersectionObserver(function(es){if(es[0].isIntersecting)es[0].target.classList.add('in');},{threshold:.1}).observe(el);
   });
 </script>

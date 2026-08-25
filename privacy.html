@@ -137,7 +137,24 @@
     <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Prompt data</h2>
     <p>All prompts are generated locally in your browser. The text you enter into our builders is not stored on our servers, not sent to us, and not shared with any third parties. Your input leaves only when you choose to copy it and paste it into an AI tool of your choice.</p>
   </div>
+  <div class="card" style="margin-bottom:24px;">
+    <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Advertising & third-party vendors</h2>
+    <p>This site may display advertisements served by Google AdSense and other third-party advertising vendors. These vendors, including Google, use cookies (such as the DoubleClick DART cookie) to serve ads based on a visitor's prior visits to this site or other sites on the internet. Google's use of advertising cookies enables it and its partners to serve ads to our visitors based on their visit to our site and/or other sites on the internet.</p>
+    <p style="margin-top:10px;">You may opt out of personalized advertising by visiting <a href="https://adssettings.google.com" style="color:var(--accent);" target="_blank" rel="noopener">Google's Ads Settings</a>, and you can learn more about how Google uses data when you use our site or its partners' sites at <a href="https://policies.google.com/technologies/partner-sites" style="color:var(--accent);" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+  </div>
+  <div class="card" style="margin-bottom:24px;">
+    <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Children's privacy</h2>
+    <p>AI Start India is not directed at children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to remove it.</p>
+  </div>
+  <div class="card" style="margin-bottom:24px;">
+    <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Your rights</h2>
+    <p>You may request access to, correction of, or deletion of any personal information you have provided to us (such as via our contact form) by emailing us at the address below. We will respond to any such request within a reasonable timeframe.</p>
+  </div>
   <div class="card">
+    <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Changes to this policy</h2>
+    <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated "last updated" date above.</p>
+  </div>
+  <div class="card" style="margin-top:24px;">
     <h2 style="font-family:'Playfair Display',serif;color:var(--ink);font-size:1.2rem;margin-bottom:12px;">Contact</h2>
     <p>For any privacy-related questions, please contact us at <a href="mailto:abchirag4@gmail.com" style="color:var(--accent);">abchirag4@gmail.com</a></p>
   </div>
@@ -192,7 +209,7 @@ document.addEventListener('click',function(e){
   }
 });
 new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.1})
-  .observe && document.querySelectorAll('.fu').forEach(function(el){
+  .observe && document.querySelectorAll('.fade-up, .fu, .slide-left, .slide-right, .scale-in').forEach(function(el){
     new IntersectionObserver(function(es){if(es[0].isIntersecting)es[0].target.classList.add('in');},{threshold:.1}).observe(el);
   });
 </script>

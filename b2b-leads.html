@@ -194,21 +194,50 @@
   <div style="margin-top:60px;">
     <div class="section-label">What you get</div>
     <div class="section-title">Inside your B2B research prompt</div>
-    <div class="card-grid-3" style="margin-top:32px;">
-      <div class="card fade-up">
-        <div style="font-size:1.4rem;margin-bottom:10px;">🏭</div>
-        <div style="font-weight:600;margin-bottom:6px;">Company intelligence</div>
-        <div style="font-size:.85rem;color:var(--ink2);line-height:1.65;">Revenue estimates, employee count, recent news, tech stack, growth signals, and funding info.</div>
+    <p style="color:var(--ink2);font-size:.95rem;margin-top:8px;margin-bottom:4px;">Every generated prompt delivers 4 structured research sections — ready to paste into any AI tool.</p>
+    <div class="card-grid-3" style="margin-top:28px;">
+
+      <div class="card fade-up" style="border-top:4px solid var(--accent);padding:28px;">
+        <div style="width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--al),#c7d2fe);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px;box-shadow:0 4px 12px rgba(79,70,229,0.15);">🏭</div>
+        <div style="font-weight:700;font-size:.98rem;margin-bottom:8px;color:var(--ink);">Company Intelligence</div>
+        <div style="font-size:.84rem;color:var(--ink2);line-height:1.7;">Revenue estimates, employee count, recent news, tech stack, growth signals, and funding rounds — everything to walk into a call prepared.</div>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag tag-blue" style="font-size:.68rem;">Revenue</span>
+          <span class="tag tag-blue" style="font-size:.68rem;">Tech stack</span>
+          <span class="tag tag-blue" style="font-size:.68rem;">Funding</span>
+        </div>
       </div>
-      <div class="card fade-up d1">
-        <div style="font-size:1.4rem;margin-bottom:10px;">👤</div>
-        <div style="font-weight:600;margin-bottom:6px;">Decision-maker profile</div>
-        <div style="font-size:.85rem;color:var(--ink2);line-height:1.65;">Role responsibilities, likely pain points, LinkedIn activity signals, and how to personalise your outreach.</div>
+
+      <div class="card fade-up d1" style="border-top:4px solid var(--teal);padding:28px;">
+        <div style="width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--tl),#a7f3d0);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px;box-shadow:0 4px 12px rgba(13,148,136,0.15);">👤</div>
+        <div style="font-weight:700;font-size:.98rem;margin-bottom:8px;color:var(--ink);">Decision-Maker Profile</div>
+        <div style="font-size:.84rem;color:var(--ink2);line-height:1.7;">Role responsibilities, common pain points, LinkedIn activity signals, likely KPIs, and exactly how to personalise your first message.</div>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag tag-teal" style="font-size:.68rem;">Pain points</span>
+          <span class="tag tag-teal" style="font-size:.68rem;">KPIs</span>
+          <span class="tag tag-teal" style="font-size:.68rem;">LinkedIn signals</span>
+        </div>
       </div>
-      <div class="card fade-up d2">
-        <div style="font-size:1.4rem;margin-bottom:10px;">✉️</div>
-        <div style="font-weight:600;margin-bottom:6px;">Outreach angle</div>
-        <div style="font-size:.85rem;color:var(--ink2);line-height:1.65;">A tailored opening line, value proposition, and subject line suggestion based on the research.</div>
+
+      <div class="card fade-up d2" style="border-top:4px solid var(--amb);padding:28px;">
+        <div style="width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--aml),#fde68a);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:16px;box-shadow:0 4px 12px rgba(217,119,6,0.15);">✉️</div>
+        <div style="font-weight:700;font-size:.98rem;margin-bottom:8px;color:var(--ink);">Outreach Strategy</div>
+        <div style="font-size:.84rem;color:var(--ink2);line-height:1.7;">A tailored cold email opening line, 2-sentence value proposition, subject line suggestion, and the best channel to reach them.</div>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:5px;">
+          <span class="tag tag-amber" style="font-size:.68rem;">Subject line</span>
+          <span class="tag tag-amber" style="font-size:.68rem;">Opening line</span>
+          <span class="tag tag-amber" style="font-size:.68rem;">Best channel</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bonus highlight row -->
+    <div style="margin-top:20px;background:linear-gradient(135deg,#f0eeff,#e0e7ff);border:1px solid rgba(79,70,229,0.15);border-radius:var(--r);padding:20px 28px;display:flex;align-items:center;gap:16px;" class="fade-up d3">
+      <div style="font-size:1.8rem;flex-shrink:0;">🎯</div>
+      <div>
+        <div style="font-weight:700;font-size:.93rem;color:var(--ink);margin-bottom:4px;">BONUS: 3 Discovery Call Questions</div>
+        <div style="font-size:.84rem;color:var(--ink2);">Every prompt also includes 3 tailored qualifying questions to ask on your discovery call — so you always sound prepared and professional.</div>
       </div>
     </div>
   </div>
@@ -397,10 +426,11 @@ document.addEventListener('click',function(e){
     document.querySelectorAll('.has-drop').forEach(function(x){x.classList.remove('open');});
   }
 });
-new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('in');});},{threshold:.1})
-  .observe && document.querySelectorAll('.fu').forEach(function(el){
-    new IntersectionObserver(function(es){if(es[0].isIntersecting)es[0].target.classList.add('in');},{threshold:.1}).observe(el);
-  });
+// Observe both .fade-up and .fu for scroll-reveal animations
+var _io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('in'); });
+}, {threshold: 0.08, rootMargin: '0px 0px -20px 0px'});
+document.querySelectorAll('.fade-up, .fu').forEach(function(el){ _io.observe(el); });
 </script>
 </body>
 </html>
