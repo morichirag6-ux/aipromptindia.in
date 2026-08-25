@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2f8a"/>
+      <stop offset="100%" style="stop-color:#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- subtle grid dots -->
+  <circle cx="100" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="300" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="500" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="700" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="900" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="1100" cy="100" r="2" fill="#ffffff08"/>
+  <circle cx="100" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="300" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="500" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="700" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="900" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="1100" cy="250" r="2" fill="#ffffff08"/>
+  <circle cx="100" cy="400" r="2" fill="#ffffff08"/>
+  <circle cx="300" cy="400" r="2" fill="#ffffff08"/>
+  <circle cx="500" cy="400" r="2" fill="#ffffff08"/>
+  <circle cx="700" cy="400" r="2" fill="#ffffff08"/>
+  <circle cx="900" cy="400" r="2" fill="#ffffff08"/>
+  <circle cx="1100" cy="400" r="2" fill="#ffffff08"/>
+  <!-- logo dot -->
+  <circle cx="120" cy="315" r="12" fill="#7c8cff"/>
+  <!-- brand name -->
+  <text x="148" y="323" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="36" fill="#ffffff">AI Start India</text>
+  <!-- tagline -->
+  <text x="120" y="390" font-family="Arial,sans-serif" font-size="28" fill="#a5b4fc">Free AI Sales Tools for Indian Teams</text>
+  <!-- pill badges -->
+  <rect x="120" y="430" width="160" height="36" rx="18" fill="#2847f020" stroke="#2847f060" stroke-width="1"/>
+  <text x="200" y="453" font-family="Arial,sans-serif" font-size="15" fill="#a5b4fc" text-anchor="middle">B2B Leads</text>
+  <rect x="294" y="430" width="170" height="36" rx="18" fill="#2847f020" stroke="#2847f060" stroke-width="1"/>
+  <text x="379" y="453" font-family="Arial,sans-serif" font-size="15" fill="#a5b4fc" text-anchor="middle">CRM Notes</text>
+  <rect x="478" y="430" width="200" height="36" rx="18" fill="#2847f020" stroke="#2847f060" stroke-width="1"/>
+  <text x="578" y="453" font-family="Arial,sans-serif" font-size="15" fill="#a5b4fc" text-anchor="middle">Pitch Generator</text>
+  <rect x="692" y="430" width="220" height="36" rx="18" fill="#2847f020" stroke="#2847f060" stroke-width="1"/>
+  <text x="802" y="453" font-family="Arial,sans-serif" font-size="15" fill="#a5b4fc" text-anchor="middle">Objection Handler</text>
+  <!-- URL -->
+  <text x="120" y="560" font-family="Arial,sans-serif" font-size="22" fill="#ffffff60">aipromptindia.in</text>
+  <!-- decorative accent -->
+  <circle cx="1050" cy="280" r="120" fill="#2847f015"/>
+  <circle cx="1050" cy="280" r="70" fill="#2847f020"/>
+  <circle cx="1050" cy="280" r="35" fill="#2847f040"/>
+  <text x="1050" y="290" font-family="Arial,sans-serif" font-size="40" fill="#ffffff" text-anchor="middle">🇮🇳</text>
+</svg>
