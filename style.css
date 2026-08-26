@@ -281,7 +281,7 @@ nav.scrolled {
   box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.05);
   backdrop-filter: blur(10px);
 }
-.builder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+.builder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
 .bh { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 24px; }
 .fr { margin-bottom: 20px; }
 .fl { display: block; font-size: .82rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
@@ -999,4 +999,82 @@ details[open] summary::after {
   content: '−';
   transform: translateY(-50%) rotate(180deg);
   color: var(--accent);
+}
+
+/* ─── NEW RESPONSIVE CLASSES ──────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 960px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.hero-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 560px) {
+  .hero-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-stats-row {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+@media (max-width: 560px) {
+  .hero-stats-row {
+    gap: 16px 24px !important;
+  }
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
 }
